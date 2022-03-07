@@ -18,7 +18,7 @@ class ImageAndIcons extends StatelessWidget {
       child: SizedBox(
         height: size.height * 0.79,
         child: Row(
-          children: <Widget>[
+          children: [
             Expanded(
                 child: Padding(
               padding:
