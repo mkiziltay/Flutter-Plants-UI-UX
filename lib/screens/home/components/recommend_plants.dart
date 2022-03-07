@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plant_app/screens/details/components/details_screen.dart';
 import '../../../constants.dart';
 
+
 class RecommendsPlants extends StatelessWidget {
   const RecommendsPlants({
     Key? key,
@@ -72,7 +73,8 @@ class RecommendPlantCard extends StatelessWidget {
       child: Column(children: <Widget>[
         Image.asset(image.toString()),
         GestureDetector(
-          onTap: () => press,
+          onTap: () {Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));},
           child: Container(
             padding: EdgeInsets.all(kDefaultPadding / 2),
             decoration: BoxDecoration(
