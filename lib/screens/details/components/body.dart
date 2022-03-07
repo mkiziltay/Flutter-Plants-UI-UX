@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:plant_app/screens/details/components/icon_card.dart';
 import '../../../constants.dart';
 import 'image_and_icons.dart';
 import 'title_and_price.dart';
