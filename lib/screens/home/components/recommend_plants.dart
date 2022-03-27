@@ -65,7 +65,7 @@ class RecommendPlantCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
           left: kDefaultPadding,
           top: kDefaultPadding / 2,
           bottom: kDefaultPadding * 2.5),
@@ -76,10 +76,10 @@ class RecommendPlantCard extends StatelessWidget {
           onTap: () {Navigator.push(context,
                   MaterialPageRoute(builder: (context) => DetailsScreen()));},
           child: Container(
-            padding: EdgeInsets.all(kDefaultPadding / 2),
+            padding: const EdgeInsets.all(kDefaultPadding / 2),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(10),
                 bottomRight: Radius.circular(10),
               ),
@@ -101,7 +101,7 @@ class RecommendPlantCard extends StatelessWidget {
                       text: "$country".toUpperCase(),
                       style: TextStyle(color: kPrimaryColor.withOpacity(0.5)))
                 ])),
-                Spacer(),
+                const Spacer(),
                 Text(
                   '\$$price',
                   style: Theme.of(context)
