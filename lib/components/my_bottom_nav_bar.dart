@@ -11,11 +11,11 @@ class MyBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2),
+      padding: const EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2),
       height: 50,
       decoration: BoxDecoration(color: Colors.white, boxShadow: [
         BoxShadow(
-            offset: Offset(0, -10),
+            offset: const Offset(0, -10),
             blurRadius: 35,
             color: kPrimaryColor.withOpacity(0.38))
       ]),
@@ -37,8 +37,8 @@ class MyBottomNavBar extends StatelessWidget {
   }
 }
 
-class buildAppBar extends StatelessWidget {
-  const buildAppBar({
+class BuildAppBar extends StatelessWidget {
+  const BuildAppBar({
     Key? key,
   }) : super(key: key);
 
