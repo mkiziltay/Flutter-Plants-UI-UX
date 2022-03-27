@@ -45,7 +45,7 @@ class HeaderWithSearchBox extends StatelessWidget {
               left: 0,
               right: 0,
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 height: 54,
                 decoration: BoxDecoration(
                     color: Colors.white,
