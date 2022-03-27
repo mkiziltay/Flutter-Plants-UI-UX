@@ -18,13 +18,13 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
           TitleWithButtonMore(title: "Recommended", press: () {}),
-          RecommendsPlants(),
+          const RecommendsPlants(),
           TitleWithButtonMore(
             title: "Featured Plants",
             press: () {},
           ),
-          FeaturedPlants(),
-          SizedBox(height: kDefaultPadding),//space bottom of FeaturedPlants
+          const FeaturedPlants(),
+          const SizedBox(height: kDefaultPadding),//space bottom of FeaturedPlants
         ],
       ),
     );
