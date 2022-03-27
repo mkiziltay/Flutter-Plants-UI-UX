@@ -13,7 +13,7 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           ImageAndIcons(size: size),
-          TitleAndPrice(
+          const TitleAndPrice(
             title: "Angela",
             country: "Russia",
             price: 440,
@@ -24,27 +24,27 @@ class Body extends StatelessWidget {
                 width: size.width / 2,
                 height: 48,
                 child: FlatButton(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.only(topRight: Radius.circular(20))),
                   color: kPrimaryColor,
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Buy now",
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
               ),
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
               Expanded(
                   child: ElevatedButton(
                 onPressed: () {},
                 style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
+                        const RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(20))))),
-                child: Text("Description",
+                child: const Text("Description",
                     style: TextStyle(
                         color: Colors.white, fontSize: 18, height: 2.6)),
               ))
