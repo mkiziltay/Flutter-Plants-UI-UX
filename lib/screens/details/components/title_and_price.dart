@@ -27,13 +27,13 @@ class TitleAndPrice extends StatelessWidget {
                       color: kTextColor, fontWeight: FontWeight.bold)),
               TextSpan(
                   text: "$country",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       color: kPrimaryColor,
                       fontWeight: FontWeight.w300))
             ]),
           ),
-          Spacer(),
+          const Spacer(),
           Text("\$$price",
               style: Theme.of(context)
                   .textTheme
