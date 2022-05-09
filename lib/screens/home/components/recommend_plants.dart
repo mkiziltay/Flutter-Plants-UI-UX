@@ -85,7 +85,7 @@ class RecommendPlantCard extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                    offset: Offset(0, 10),
+                    offset: const Offset(0, 10),
                     blurRadius: 50,
                     color: kPrimaryColor.withOpacity(0.23))
               ],
