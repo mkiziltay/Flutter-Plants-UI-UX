@@ -21,7 +21,7 @@ class RecommendsPlants extends StatelessWidget {
             title: "Cactus",
             press: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));
             },
           ),
           RecommendPlantCard(
@@ -31,7 +31,7 @@ class RecommendsPlants extends StatelessWidget {
             title: "Angela",
             press: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));
             },
           ),
           RecommendPlantCard(
@@ -74,7 +74,7 @@ class RecommendPlantCard extends StatelessWidget {
         Image.asset(image.toString()),
         GestureDetector(
           onTap: () {Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));},
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));},
           child: Container(
             padding: const EdgeInsets.all(kDefaultPadding / 2),
             decoration: BoxDecoration(
